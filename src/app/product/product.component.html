@@ -1,0 +1,45 @@
+<section *ngIf="product" class="container content-container product-flex">
+  <mat-card class="product-flex-child-image">
+    <mat-card-content>
+      <img src="{{product.image}}">
+    </mat-card-content>
+  </mat-card>
+  <div class="product-flex-child">
+    <h1><b>{{product.name}}</b></h1>
+    <p>
+      {{product.description}}
+    </p>
+    <br>
+    <h2>Dimensions</h2>
+    <p><b *ngIf="product.dimensions.width">width:</b> <span *ngIf="product.dimensions.width">{{product.dimensions.width}}</span></p>
+    <p><b *ngIf="product.dimensions.height">height:</b> <span *ngIf="product.dimensions.height">{{product.dimensions.height}}</span></p>
+    <p><b *ngIf="product.dimensions.depth">depth:</b> <span *ngIf="product.dimensions.depth">{{product.dimensions.depth}}</span></p>
+    <br>
+    <h2>Packaging</h2>
+    <p><b *ngIf="product.packaging.dimensions">dimensions:</b> <span *ngIf="product.packaging.dimensions">{{product.packaging.dimensions}}</span></p>
+    <p><b *ngIf="product.packaging.weight">weight:</b> <span *ngIf="product.packaging.weight">{{product.packaging.weight}}</span></p>
+
+    <br>
+    <br>
+
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input type="number" class="form-control" id="quantity" [(ngModel)]="quantity">
+      <button class="btn btn-buy" type="submit" (click)="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-flex-child">
+    <mat-card class="review" *ngFor="let review of product.reviews">
+      <mat-card-content>
+        <b>{{review.author}}</b>
+      </mat-card-content>
+      <mat-card-content>
+        <p>{{review.comment}}</p>
+      </mat-card-content>
+      <mat-card-content>
+        <progress value="{{review.rating}}" max="5"></progress>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>

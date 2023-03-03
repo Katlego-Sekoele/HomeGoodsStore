@@ -1,1 +1,191 @@
 /* You can add global styles to this file, and also import other style files */
+.content-container {
+  padding: 1em !important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+.tagline-content {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 4.5em !important;
+  line-height: 1em !important;
+  text-align: center;
+}
+
+.tagline-content-no-size {
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.sub-text {
+  text-align: justify;
+  max-width: 100%;
+  font-size: 1.5em;
+  line-height: 1em !important;
+}
+
+.center-div {
+  width: 100%;
+  padding: 4em;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.center-image {
+  height:40em !important; /* you can use % */
+  width: auto;
+}
+
+.navbar-custom {
+  height: 5em;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,.3);
+  display: flex;
+  padding: 1em;
+  justify-content: space-evenly;
+  align-content: center;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: seagreen;
+}
+
+.navbar-custom button {
+  color: white !important;
+}
+
+.navbar-custom-logo {
+  flex-basis: 30%;
+}
+
+.card-flex {
+  padding: 2em;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: center;
+  overflow-x: auto;
+}
+
+.card-content-flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 2em;
+  cursor: pointer;
+}
+
+.card-content-flex img {
+  max-width: 30em;
+  height: auto;
+}
+
+.product-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.product-card {
+  /*flex-grow: 1;*/
+  min-width: 20em;
+  height: auto;
+  margin-top: 1em;
+  margin-right: 0.2em;
+}
+
+.product-card-button {
+  margin-top: 2em;
+}
+
+.product-card img {
+  object-fit: cover;
+  width: 20em;
+  height: 20em;
+}
+
+.thumbnail {
+  object-fit: cover;
+  width: 20em;
+  height: 20em;
+}
+
+
+.card-image {
+  margin-bottom: 2em;
+}
+
+.product-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.product-flex-child {
+  padding: 5em;
+}
+
+.product-flex-child-image{
+  flex-basis: 40%;
+}
+
+.product-flex-child-image img {
+  width: 50em;
+  height: auto;
+}
+
+.review {
+  min-width: 50em;
+  margin-bottom: 2em;
+}
+
+.btn-buy {
+  margin-top: 1em;
+  background-color: seagreen;
+  color: white;
+}
+
+.btn-buy:hover, .btn-buy:focus, .btn-buy:active, .btn-buy.active  {
+  background-color: green !important;
+  color: white;
+}
+
+.multi_lines_text {
+  white-space: pre-line;
+}
+
+.thirty-seventy {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.thirty {
+  flex-basis: 20%;
+}
+
+.thirty img {
+  object-fit: cover;
+  width: 20em;
+  height: 20em;
+}
+
+.form-container {
+  margin-top: 5em;
+  max-width: 60%;
+}

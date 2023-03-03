@@ -1,0 +1,28 @@
+<section>
+<div class="product-card-container">
+  <mat-card *ngFor="let item of content" class="product-card">
+    <mat-card-content class="card-image">
+      <img src="{{item.image}}" alt="{{item.name}}">
+    </mat-card-content>
+    <mat-card-content>
+      <b>{{item.name}}</b>
+    </mat-card-content>
+    <mat-card-content>
+      <i>
+        R{{item.price}}
+      </i>
+    </mat-card-content>
+    <mat-card-content style="display: block !important;">
+      User satisfaction:  <progress id="rating" [value]="getAverageRating(item)" max="5"></progress>
+
+    </mat-card-content>
+    <mat-card-content>
+      <button class="btn btn-outline-primary product-card-button" [routerLink]="'/product/'+link(item)">
+        View
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>
+</section>
+
+
