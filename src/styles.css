@@ -245,3 +245,14 @@ input[type="color"]:focus,
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--accent-green-transparent) !important;
   outline: 0 none !important;
 }
+
+.footer {
+  padding: 1rem;
+  left: 0;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
+  background-color: var(--accent-green);
+  color: var(--background);
+  text-align: center;
+}
