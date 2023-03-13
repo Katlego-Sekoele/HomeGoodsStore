@@ -1,3 +1,5 @@
+<div class="content-container" style="min-height: 100vh;">
+
 <div class="content-container container">
   <table *ngIf="cartItems.length > 0" class="table">
     <thead>
@@ -31,12 +33,10 @@
     There are no items in your cart.
   </h1>
 </div>
-
-
 <div *ngIf="cartItems.length > 0" style="display: flex; justify-content: flex-end;">
   <button class="btn btn-danger" (click)="clearCart()">
     Clear Cart
   </button>
 </div>
 
-
+</div>

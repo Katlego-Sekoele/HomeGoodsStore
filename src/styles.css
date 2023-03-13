@@ -12,6 +12,7 @@
 
 .content-container {
   padding: 1em !important;
+  height: 100%;
 }
 
 @font-face {
@@ -269,4 +270,10 @@ input[type="color"]:focus,
 
 .dropdown-container {
   background-color: var(--primary);
+}
+
+.carousel-slide img {
+  width: 100% !important; /* you can use % */
+  height: 40em !important;
+  object-fit: cover !important;
 }

@@ -209,13 +209,13 @@ export class ContentService {
         },
         reviews: [
           {
-            rating: 4,
-            comment: "These prints are really cool. They add a nice touch to my living room.",
+            rating: 2,
+            comment: "These prints are really ugly. They add a terrible touch to my living room.",
             author: "Sarah"
           },
           {
-            rating: 5,
-            comment: "I absolutely love these prints! They are even better in person than in the pictures.",
+            rating: 1,
+            comment: "I absolutely hate these prints! They are even worse in person than in the pictures.",
             author: "David"
           }
         ]
@@ -339,12 +339,12 @@ export class ContentService {
       },
       reviews: [
         {
-          rating: 5,
+          rating: 2,
           comment: "This pillow is so soft and comfortable, and the pattern is lovely.",
           author: "Lisa"
         },
         {
-          rating: 3,
+          rating: 1,
           comment: "The pillow is fine, but the colors are a bit brighter than I expected.",
           author: "John"
         }

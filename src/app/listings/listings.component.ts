@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ContentService, ProductInterface} from "../content.service";
 import {ActivatedRoute} from "@angular/router";
+import {NgbRatingConfig} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-listings',
@@ -11,9 +12,14 @@ export class ListingsComponent implements OnInit{
 
   @Input() content: ProductInterface[] | undefined = []
 
-  constructor(private contentService: ContentService, private route: ActivatedRoute) {
+  constructor(private contentService: ContentService, private route: ActivatedRoute, config: NgbRatingConfig) {
 
+    // customize default values of ratings used by this component tree
+    config.max = 5;
+    config.readonly = true;
   }
+
+
 
   ngOnInit(): void {
 

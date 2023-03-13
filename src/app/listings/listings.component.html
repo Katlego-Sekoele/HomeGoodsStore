@@ -13,7 +13,10 @@
       </i>
     </mat-card-content>
     <mat-card-content style="display: block !important;">
-      User satisfaction:  <progress id="rating" [value]="getAverageRating(item)" max="5"></progress>
+      <br>
+      <ngb-rating style="color: var(--accent-yellow)" [rate]="getAverageRating(item)" [readonly]="true"></ngb-rating>
+
+<!--      User satisfaction:  <progress id="rating" [value]="getAverageRating(item)" max="5"></progress>-->
 
     </mat-card-content>
     <mat-card-content>
