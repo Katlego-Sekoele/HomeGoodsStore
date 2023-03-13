@@ -528,6 +528,14 @@ export class ContentService {
       this.cart.push({product, quantity})
   }
 
+  getTotal(){
+      let count = 0;
+    for (const cartElement of this.cart) {
+      count += (cartElement.quantity * cartElement.product.price)
+    }
+    return count
+  }
+
   clearCart(){
       this.cart = []
   }

@@ -282,3 +282,12 @@ input[type="color"]:focus,
   height: 40em !important;
   object-fit: cover !important;
 }
+
+.custom-card {
+  background-color: white;
+  border-radius: 1em !important;
+  padding: 3em;
+  box-shadow: -1px 3px 7px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 3px 7px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 3px 7px -2px rgba(0, 0, 0, 0.75);
+}

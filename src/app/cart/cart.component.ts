@@ -22,4 +22,8 @@ export class CartComponent implements OnInit{
     this.cartItems = this.contentService.getCart()
   }
 
+  total(){
+    return this.contentService.getTotal()
+  }
+
 }
