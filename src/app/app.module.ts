@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgbDropdownModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
@@ -21,6 +21,9 @@ import { AboutComponent } from './about/about.component';
 import { CartComponent } from './cart/cart.component';
 import {FormsModule} from "@angular/forms";
 import { ContactComponent } from './contact/contact.component';
+import { FaqComponent } from './faq/faq.component';
+import { PolicyComponent } from './policy/policy.component';
+import { RefundsComponent } from './refunds/refunds.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { ContactComponent } from './contact/contact.component';
     ProductComponent,
     AboutComponent,
     CartComponent,
-    ContactComponent
+    ContactComponent,
+    FaqComponent,
+    PolicyComponent,
+    RefundsComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +52,8 @@ import { ContactComponent } from './contact/contact.component';
     MatInputModule,
     MatCardModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    NgbDropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

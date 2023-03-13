@@ -7,6 +7,16 @@
   <button class="btn" [routerLink]="'listings/kitchenware'">Kitchenware</button>
   <button class="btn" [routerLink]="'about'">About Us</button>
   <button class="btn" [routerLink]="'contact'">Contact Us</button>
+  <div ngbDropdown autoClose="true" class="d-inline-block">
+    <button type="button" class="btn" id="info-dropdown" ngbDropdownToggle>
+      More Info
+    </button>
+    <div ngbDropdownMenu aria-labelledby="info-dropdown" class="dropdown-container">
+      <button ngbDropdownItem class="dropdown-btn" [routerLink]="'faq'">FAQs</button>
+      <button ngbDropdownItem class="dropdown-btn" [routerLink]="'policy'">Privacy Policy</button>
+      <button ngbDropdownItem class="dropdown-btn" [routerLink]="'refunds'">Refunds & Returns</button>
+    </div>
+  </div>
   <button class="btn" [routerLink]="'cart'">
     <mat-icon aria-hidden="false" aria-label="Shopping cart" fontIcon="shopping_cart"></mat-icon>
   </button>

@@ -247,6 +247,7 @@ input[type="color"]:focus,
 }
 
 .footer {
+  margin-top: 2rem;
   padding: 1rem;
   left: 0;
   bottom: 0;
@@ -255,4 +256,17 @@ input[type="color"]:focus,
   background-color: var(--accent-green);
   color: var(--background);
   text-align: center;
+}
+
+.dropdown-btn {
+  color: var(--background) !important;
+  background-color: var(--primary);
+}
+
+.dropdown-btn:hover, .dropdown-btn:active  {
+  background-color: var(--accent-green) !important;
+}
+
+.dropdown-container {
+  background-color: var(--primary);
 }
