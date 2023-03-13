@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/*global variables*/
 :root {
   --primary: #15451F;
   --accent-green: #00916E;
@@ -9,12 +9,14 @@
 
 }
 
+/* change the font of the logo */
 .logo {
   vertical-align: center;
   margin-left: 0.3em;
   font-family: 'Climate Crisis', cursive;
 }
 
+/* add pading around the whole page */
 .content-container {
   padding: 1em !important;
   height: 100%;
@@ -26,6 +28,7 @@
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
+/* set global font and background colour */
 html, body { height: 100%; width: 100% }
 body {
   margin: 0;
@@ -33,10 +36,12 @@ body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
 }
 
+/* round corners of all images */
 img {
   border-radius: 6px;
 }
 
+/* style the text content on the home page */
 .tagline-content {
   font-weight: bold;
   text-transform: capitalize;
@@ -44,25 +49,23 @@ img {
   line-height: 1em !important;
   text-align: center;
 }
-
 .tagline-content-no-size {
   font-weight: bold;
   text-transform: capitalize;
   text-align: center;
 }
-
 .sub-text {
   text-align: justify;
   max-width: 100%;
   font-size: 1.5em;
   line-height: 1em !important;
 }
-
 .center-div {
   width: 100%;
   padding: 4em;
 }
 
+/* horizontally center */
 .center {
   display: block;
   margin-left: auto;
@@ -70,12 +73,7 @@ img {
   width: 80%;
 }
 
-.center-image {
-  height:40em !important; /* you can use % */
-  max-width: 100%;
-  width: auto;
-}
-
+/* styling for the navbar */
 .navbar-custom {
   height: 5em;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,.3);
@@ -89,15 +87,17 @@ img {
   z-index: 10;
   background-color: var(--primary);
 }
-
+/* change text color of buttons in the navbar */
 .navbar-custom button {
   color: var(--background) !important;
 }
 
+/* make the logo bigger than the rest of the navbar */
 .navbar-custom-logo {
   flex-basis: 30%;
 }
 
+/* flexbox to change layout as screen width changes */
 .card-flex {
   /*padding: 2em;*/
   width: 100%;
@@ -106,7 +106,6 @@ img {
   align-content: center;
   overflow-x: auto;
 }
-
 .card-content-flex {
   display: flex;
   justify-content: center;
@@ -115,6 +114,7 @@ img {
   cursor: pointer;
 }
 
+/* set the max width of a product card */
 .card-content-flex img {
   max-width: 30em;
   height: auto;
@@ -137,6 +137,7 @@ img {
   margin-right: 0.2em;
 }
 
+/* change the colour of the button on a product card */
 .product-card-button {
   margin-top: 2em;
   background-color: var(--primary);
@@ -144,12 +145,13 @@ img {
   border: none;
 }
 
+/* change hover and active effects of a button on a product card */
 .product-card-button:hover, .product-card-button:active  {
   background-color: var(--accent-green) !important;
   color: var(--background) !important;
 }
 
-
+/* make all product image cards the same size */
 .product-card img {
   object-fit: cover;
   width: 20em;
@@ -194,6 +196,8 @@ img {
   margin-bottom: 2em;
 }
 
+
+/* change the standard colours of the buttons on the page */
 .btn-buy {
   margin-top: 1em;
   background-color: var(--primary);
@@ -252,6 +256,7 @@ input[type="color"]:focus,
   outline: 0 none !important;
 }
 
+/* styles the footer */
 .footer {
   margin-top: 2rem;
   padding: 1rem;
@@ -264,25 +269,26 @@ input[type="color"]:focus,
   text-align: center;
 }
 
+/* change dropdown menu colours */
 .dropdown-btn {
   color: var(--background) !important;
   background-color: var(--primary);
 }
-
 .dropdown-btn:hover, .dropdown-btn:active  {
   background-color: var(--accent-green) !important;
 }
-
 .dropdown-container {
   background-color: var(--primary);
 }
 
+/* make all images in the image carousel the same size */
 .carousel-slide img {
   width: 100% !important; /* you can use % */
   height: 40em !important;
   object-fit: cover !important;
 }
 
+/* a custom styled card used for the card details capture on the cart page */
 .custom-card {
   background-color: white;
   border-radius: 1em !important;
