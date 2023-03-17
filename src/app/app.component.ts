@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'INF3014F_Workshop_2';
-  isCollapsed = false;
+  isCollapsed = true;
 
 }
