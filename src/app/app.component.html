@@ -43,7 +43,7 @@
     </button>
 
   </section>
-  <div style="z-index: 11; min-height: 100px; position: sticky" [class.remove-dom]="isCollapsed">
+  <div style="z-index: 11; min-height: 100px; position: sticky" [class.remove-dom]="isCollapsed === true">
     <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="false" style="max-width: 100%">
       <div class="" style="width: 100vw">
         <div class="sidebar-body" (click)="isCollapsed = true">
