@@ -1,5 +1,6 @@
 
-<section class="navbar-custom">
+
+<section class="navbar-custom desktop-navbar-custom">
   <button class="btn navbar-custom-logo" [routerLink]="''">
     <span class="material-symbols-outlined" style="vertical-align: center; font-size: 1em !important;">
     chair
@@ -25,6 +26,46 @@
     <mat-icon aria-hidden="false" aria-label="Shopping cart" fontIcon="shopping_cart"></mat-icon>
   </button>
 </section>
+
+<div>
+  <section class="mobile-navbar-custom">
+    <button class="btn navbar-custom-logo" [routerLink]="''">
+    <span class="material-symbols-outlined" style="vertical-align: center; font-size: 1em !important;">
+    chair
+    </span>
+      <span class="logo">Home Goods Store</span>
+    </button>
+
+    <button class="btn" (click)="isCollapsed = !isCollapsed">
+    <span class="material-symbols-outlined">
+      menu
+    </span>
+    </button>
+
+  </section>
+  <div style="z-index: 11; min-height: 100px; position: sticky" [class.remove-dom]="isCollapsed">
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="false" style="max-width: 100%">
+      <div class="" style="width: 100vw">
+        <div class="sidebar-body" (click)="isCollapsed = true">
+          <button class="btn dropdown-btn" [routerLink]="'listings/furniture'">Furniture</button>
+          <button class="btn dropdown-btn" [routerLink]="'listings/decor'">Decor</button>
+          <button class="btn dropdown-btn" [routerLink]="'listings/kitchenware'">Kitchenware</button>
+          <button class="btn dropdown-btn" [routerLink]="'about'">About Us</button>
+          <button class="btn dropdown-btn" [routerLink]="'contact'">Contact Us</button>
+          <button class="btn dropdown-btn" [routerLink]="'faq'">FAQs</button>
+          <button class="btn dropdown-btn" [routerLink]="'policy'">Privacy Policy</button>
+          <button class="btn dropdown-btn" [routerLink]="'refunds'">Refunds & Returns</button>
+          <button class="btn dropdown-btn" [routerLink]="'cart'">
+            <mat-icon aria-hidden="false" aria-label="Shopping cart" fontIcon="shopping_cart"></mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 <section class="container">
   <router-outlet class="content-container"></router-outlet>
