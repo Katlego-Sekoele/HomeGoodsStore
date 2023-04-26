@@ -1,4 +1,8 @@
-# INF3014FWorkshop2
+# Home Goods Store
+
+This is an ecommerce website built with Angular that serves to sell home goods items to customers. The website is largely unfinished and was used to learn and play around with Angular.
+
+# The Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
 
