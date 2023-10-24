@@ -1,6 +1,6 @@
 # Home Goods Store
 
-This is an ecommerce website built with Angular that serves to sell home goods items to customers. The website is largely unfinished and was used to learn and play around with Angular.
+This is an ecommerce website built with Angular that serves to sell home goods items to customers. The website is largely unfinished and was used to learn and play around with Angular. The website is publicly hosted [here](https://inf3014f-tutorial-2.onrender.com/).
 
 # The Project
 
